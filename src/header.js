@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink,  Link } from 'react-router-dom';
 
 const Header = () => {
-  const listMenu = ['Home', 'Experience','Education','Skills', 'Interest'];
+  const listMenu = ['Home', 'Experience','Education','Skills', 'Interest','Game'];
   
   return (
     <div className="header">

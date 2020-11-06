@@ -1,14 +1,12 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import pdf from '../asset/CV_NEWSR.pdf';
-
-const logo = [
-{
-	'name': 'github',
-	'link': 'fa fa-instagram'
-}
-];
+import useTitle from '../utility/costumHook';
 
 const Home = () => {
+const [count,setCount] = useTitle();
+const [myNumber,setNumber] = useState(0);
+
+
 
 return (
 <div>
@@ -20,6 +18,14 @@ return (
 	<div class="text">
 		Hy welcome to my web CV thanks for visiting and have a nice day
 	</div>
+	<button type="button" onClick={() => {
+		setCount(count+1)
+		}}>click me!</button>
+
+	<button type="button" onClick={() => {
+		setNumber(myNumber+1)
+		}}>click number!</button>
+		<p>{myNumber}</p>
 	<p class="content">Contact me at &nbsp;<b>ary98ramadhan@gmail.com</b></p>
 	
 	<div class="button">

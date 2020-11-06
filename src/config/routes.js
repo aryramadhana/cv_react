@@ -1,4 +1,4 @@
-import { Home, Experience, Education, Skills, Interest } from '../pages';
+import { Home, Experience, Education, Skills, Interest, Game } from '../pages';
 
 const routes = [
   {
@@ -19,6 +19,11 @@ const routes = [
   {
     path: '/interest',
     component: Interest,
+    isPublic: true,
+  },
+  {
+    path: '/game',
+    component: Game,
     isPublic: true,
   },
     {
